@@ -3,7 +3,8 @@ import DogsList from "./DogsList";
 
 class DogsListContainer extends Component {
   state = {
-    dogBreeds: null
+    dogBreeds: null,
+    dogImages: null
   };
 
   componentDidMount() {

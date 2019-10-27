@@ -1,23 +1,32 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+// import dogPaw from "./dog-paw.svg";
 
 class DogsList extends Component {
   renderDogBreed(breed) {
     return (
-      <li key={breed}>
-        <Link to={`/dog-breeds/${breed}`}>{breed}</Link>
-      </li>
+      <Link className="breedText" to={`/dog-breeds/${breed}`}>
+        <div className="singleBreed" key={breed}>
+          {breed}
+        </div>
+      </Link>
     );
   }
   render() {
     const { dogBreeds } = this.props;
     return (
       <div className="dogsList">
-        <h1>List o' doggos</h1>
+        <div className="title">
+          {/* <img className="doggPaw" src={dogPaw} alt="dogg-paw" /> */}
+          <h1>A big ol' list o' puppy breeds</h1>
+          {/* <img className="doggPaw" src={dogPaw} alt="dogg-paw" /> */}
+        </div>
 
         {!dogBreeds && "Loadin' dawgs..."}
 
-        {dogBreeds && <ul> {dogBreeds.map(this.renderDogBreed)}</ul>}
+        <div className="allThePups">
+          {dogBreeds && dogBreeds.map(this.renderDogBreed)}
+        </div>
       </div>
     );
   }

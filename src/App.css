@@ -1,22 +1,87 @@
+@import url("https://fonts.googleapis.com/css?family=Fredoka+One|Spicy+Rice&display=swap");
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+main {
+  border: 2px solid rgb(255, 0, 0);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+a {
+  text-decoration: none;
+}
+
+.dogsList {
+  border: 2px solid blue;
+}
+
+.title {
+  height: 150px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 30px;
+  border: 2px solid purple;
+  color: red;
+  background-image: url(./images/dog-paw.png);
+  background-repeat: space;
+  background-position: 50%;
 }
 
-.App-link {
-  color: #09d3ac;
+.doggPaw {
+  width: 30px;
+}
+
+h1 {
+  font-family: "Spicy Rice", sans-serif;
+  font-size: 60px;
+  padding: 10px 30px;
+  text-shadow: 10px 10px 50px white, -10px 10px 50px white,
+    10px -10px 50px white, -10px -10px 50px white;
+}
+.allThePups {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border: 2px solid magenta;
+}
+.singleBreed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 60px;
+  height: 60px;
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid orange;
+  border-radius: 60px;
+  animation-name: jiggle;
+  animation-duration: 0.2s;
+  animation-iteration-count: infinite;
+  transition: 1s;
+}
+
+@keyframes jiggle {
+  0% {
+    transform: rotate(-1deg);
+  }
+  50% {
+    transform: rotate(1deg);
+  }
+}
+
+.singleBreed:hover {
+  background-color: lightpink;
+  transform: scale(1.03);
+  transition: 1s;
+  box-shadow: 0 0 20px lime;
+}
+
+.breedText {
+  font-family: "Fredoka One";
+}
+.dog-breed-images {
+  border: 2px solid black;
 }
