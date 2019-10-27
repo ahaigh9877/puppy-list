@@ -17,12 +17,14 @@ a {
 }
 
 .title {
-  height: 150px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 30px;
-  border: 2px solid purple;
+  box-shadow: 0 0 20px red;
+  border-radius: 40px;
+  margin: 20px;
   color: red;
   background-image: url(./images/dog-paw.png);
   background-repeat: space;
@@ -35,17 +37,20 @@ a {
 
 h1 {
   font-family: "Spicy Rice", sans-serif;
-  font-size: 60px;
+  font-size: 40px;
   padding: 10px 30px;
   text-shadow: 10px 10px 50px white, -10px 10px 50px white,
     10px -10px 50px white, -10px -10px 50px white;
 }
 .allThePups {
+  border-radius: 40px;
+  margin: 20px;
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  border: 2px solid magenta;
+
+  background-color: lightskyblue;
 }
 .singleBreed {
   display: flex;
@@ -55,8 +60,9 @@ h1 {
   height: 60px;
   margin: 20px;
   padding: 20px;
-  border: 2px solid orange;
+
   border-radius: 60px;
+  background-color: rgb(187, 229, 255);
   animation-name: jiggle;
   animation-duration: 0.2s;
   animation-iteration-count: infinite;
@@ -74,9 +80,10 @@ h1 {
 
 .singleBreed:hover {
   background-color: lightpink;
-  transform: scale(1.03);
+  transform: scale(1.04);
   transition: 1s;
-  box-shadow: 0 0 20px lime;
+  box-shadow: 5px 5px 20px lightpink, -5px 5px 20px lightpink,
+    5px -5px 20px lightpink, -5px -5px 20px lightpink;
 }
 
 .breedText {
