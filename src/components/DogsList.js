@@ -18,7 +18,7 @@ class DogsList extends Component {
       <div className="dogsList">
         <div className="title">
           {/* <img className="doggPaw" src={dogPaw} alt="dogg-paw" /> */}
-          <h1>A big ol' list o' puppy breeds</h1>
+          <h1>A big ol' list o' puppy breeds for Ana</h1>
           {/* <img className="doggPaw" src={dogPaw} alt="dogg-paw" /> */}
         </div>
 
