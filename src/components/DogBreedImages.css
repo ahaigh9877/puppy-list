@@ -1,24 +1,23 @@
-.dog-breed-images {
-  border: 2px solid brown;
-}
-
 .topBit {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid darkcyan;
   background-color: skyblue;
 }
 
 .backLink {
   font-family: "Fredoka One";
-  border: 2px solid blue;
-  background-color: rgb(174, 223, 253);
-  border-radius: 20px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 20px;
-  margin: -20px 20px 20px 20px;
-  transition: 0.5s;
+  box-shadow: 0 0 15px #eba286;
+  border-radius: 40px;
+  margin: 20px;
+  color: #eba286;
+  background-color: aliceblue;
 }
 
 .backLink:hover {
@@ -31,13 +30,18 @@
 .puppyPics {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  border: 2px solid orchid;
+  justify-content: center;
+  background-color: skyblue;
+  box-shadow: 0 0 20px skyblue;
+  border-radius: 40px;
+  margin: 20px;
 }
 
 .puppyPic {
-  border: 2px solid darkgreen;
-  border-radius: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 250px;
   margin: 20px;
   height: 300px;
   width: 300px;
@@ -48,36 +52,4 @@
 .puppyPic:hover {
   transition: 1s;
   border-radius: 30px;
-}
-
-.heart-shape {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-  background-color: rgba(250, 184, 66, 1);
-}
-.heart-shape:before,
-.heart-shape:after {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  content: "";
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  background-color: rgba(250, 184, 66, 1);
-}
-.heart-shape:before {
-  bottom: 0px;
-  left: -100px;
-}
-.heart-shape:after {
-  top: -100px;
-  right: 0px;
 }

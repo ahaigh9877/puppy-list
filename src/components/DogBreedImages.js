@@ -9,12 +9,14 @@ function DogBreedImages(props) {
 
   return (
     <div className="dog-breed-images">
-      <div className="topBit">
+      <div className="title">
         <h1>{breed} Puppy Pics!!!</h1>
-        <Link to="/">
-          <div className="backLink">Go back to the index for more PUPPIES!</div>
-        </Link>
       </div>
+      <Link to="/">
+        <div className="backLink">
+          Go back to the main page for more PUPPIES!
+        </div>
+      </Link>
       <div className="puppyPics">
         {images &&
           images.map(url => <img className="puppyPic" src={url} alt="Puppy" />)}
